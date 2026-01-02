@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #1a1d24;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* NEON BORDER */
+.neon-border {
+  padding: 4px;
+  border-radius: 20px;
+  background: linear-gradient(
+    270deg,
+    #7c3aed,
+    #22d3ee,
+    #a855f7,
+    #7c3aed
+  );
+  background-size: 600% 600%;
+  animation: neon 6s linear infinite;
+}
+
+@keyframes neon {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* FRAME */
+.frame {
+  width: 1200px;
+  background: #111;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* HEADER */
+.header {
+  background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 60px 20px;
+  color: #fff;
+}
+
+.header h1 {
+  background: rgba(124,58,237,.8);
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+
+/* CONTENT */
+.content {
+  display: grid;
+  grid-template-columns: 260px 1fr 300px;
+  gap: 20px;
+  padding: 30px;
+}
+
+/* PROFILE */
+.profile {
+  background: #1f2430;
+  border-radius: 16px;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.profile img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.role {
+  color: #a855f7;
+}
+
+.desc {
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+.social span {
+  margin: 0 6px;
+}
+
+/* POSTS */
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post {
+  background: #1f2430;
+  border-radius: 16px;
+  padding: 16px;
+  color: #fff;
+}
+
+.post img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.post h3 {
+  margin: 12px 0 6px;
+}
+
+/* ABOUT */
+.about {
+  background: #1f2430;
+  border-radius: 16px;
+  padding: 20px;
+  color: #fff;
+}
+
+.about-actions {
+  margin-top: 14px;
+}
+
+.about-actions button {
+  margin-right: 8px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  background: #7c3aed;
+  color: #fff;
+  cursor: pointer;
+}
+
+.about-actions button:hover {
+  background: #22d3ee;
+  color: #000;
+}
